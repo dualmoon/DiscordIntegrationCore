@@ -102,7 +102,7 @@ public class DiscordClient extends ListenerAdapter {
             }
 
             this.jda = builder
-                .buildAsync();
+                .build();
         } catch (LoginException e) {
             DiscordIntegrationLogger.Log(
                 String.format(
