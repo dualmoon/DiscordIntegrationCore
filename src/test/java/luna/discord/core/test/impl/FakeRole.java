@@ -6,7 +6,6 @@ import net.dv8tion.jda.core.entities.Channel;
 import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.entities.Role;
 import net.dv8tion.jda.core.managers.RoleManager;
-import net.dv8tion.jda.core.managers.RoleManagerUpdatable;
 import net.dv8tion.jda.core.requests.restaction.AuditableRestAction;
 import net.dv8tion.jda.core.requests.restaction.RoleAction;
 import org.jetbrains.annotations.NotNull;
@@ -116,11 +115,6 @@ public class FakeRole implements Role {
 
     @Override
     public RoleManager getManager() {
-        return null;
-    }
-
-    @Override
-    public RoleManagerUpdatable getManagerUpdatable() {
         return null;
     }
 

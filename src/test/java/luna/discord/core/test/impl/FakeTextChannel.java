@@ -3,7 +3,6 @@ package luna.discord.core.test.impl;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.managers.ChannelManager;
-import net.dv8tion.jda.core.managers.ChannelManagerUpdatable;
 import net.dv8tion.jda.core.requests.RestAction;
 import net.dv8tion.jda.core.requests.restaction.*;
 import org.jetbrains.annotations.NotNull;
@@ -164,11 +163,6 @@ public class FakeTextChannel implements TextChannel {
     }
 
     @Override
-    public ChannelManagerUpdatable getManagerUpdatable() {
-        return null;
-    }
-
-    @Override
     public AuditableRestAction<Void> delete() {
         return null;
     }
@@ -210,6 +204,11 @@ public class FakeTextChannel implements TextChannel {
 
     @Override
     public long getIdLong() {
+        return 0;
+    }
+
+    @Override
+    public int getSlowmode() {
         return 0;
     }
 }

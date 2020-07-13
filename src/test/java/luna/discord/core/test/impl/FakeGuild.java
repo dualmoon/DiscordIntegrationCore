@@ -7,10 +7,10 @@ import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.managers.AudioManager;
 import net.dv8tion.jda.core.managers.GuildController;
 import net.dv8tion.jda.core.managers.GuildManager;
-import net.dv8tion.jda.core.managers.GuildManagerUpdatable;
 import net.dv8tion.jda.core.requests.Request;
 import net.dv8tion.jda.core.requests.Response;
 import net.dv8tion.jda.core.requests.RestAction;
+import net.dv8tion.jda.core.requests.restaction.MemberAction;
 import net.dv8tion.jda.core.requests.restaction.pagination.AuditLogPaginationAction;
 import net.dv8tion.jda.core.utils.cache.MemberCacheView;
 import net.dv8tion.jda.core.utils.cache.SnowflakeCacheView;
@@ -316,11 +316,6 @@ public class FakeGuild implements Guild {
     }
 
     @Override
-    public GuildManagerUpdatable getManagerUpdatable() {
-        return null;
-    }
-
-    @Override
     public GuildController getController() {
         return null;
     }
@@ -408,5 +403,40 @@ public class FakeGuild implements Guild {
     @Override
     public long getIdLong() {
         return 0;
+    }
+
+    @Override
+    public RestAction<EnumSet<Region>> retrieveRegions(boolean includeDeprecated) {
+        return null;
+    }
+
+    @Override
+    public MemberAction addMember(String accessToken, String userId) {
+        return null;
+    }
+
+    @Override
+    public long getOwnerIdLong() {
+        return 0;
+    }
+
+    @Override
+    public List<Channel> getChannels(boolean includeHidden) {
+        return null;
+    }
+
+    @Override
+    public RestAction<List<ListedEmote>> retrieveEmotes() {
+        return null;
+    }
+
+    @Override
+    public RestAction<ListedEmote> retrieveEmoteById(String id) {
+        return null;
+    }
+
+    @Override
+    public RestAction<Ban> getBanById(String userId) {
+        return null;
     }
 }
