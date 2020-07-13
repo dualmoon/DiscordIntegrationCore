@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 Chikachi and other contributors
+ * Copyright (C) Ashley "luna" Davis, Airside Networks and other contributors
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
@@ -56,7 +56,7 @@ public class Proxy {
             return;
         }
 
-        Configuration.onPreInit(configurationPath.getAbsolutePath() + File.separator + "Chikachi");
+        Configuration.onPreInit(configurationPath.getAbsolutePath() + File.separator + "luna");
         Configuration.validateConfig();
 
         preInit = true;
