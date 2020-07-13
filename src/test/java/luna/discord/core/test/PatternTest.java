@@ -11,10 +11,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses.
  */
-package chikachi.discord.core.test;
+package luna.discord.core.test;
 
-import chikachi.discord.core.CoreUtils;
-import chikachi.discord.core.Patterns;
+import luna.discord.core.CoreUtils;
+import luna.discord.core.Patterns;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

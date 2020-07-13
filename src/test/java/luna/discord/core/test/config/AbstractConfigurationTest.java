@@ -1,6 +1,6 @@
-package chikachi.discord.core.test.config;
+package luna.discord.core.test.config;
 
-import chikachi.discord.core.config.Configuration;
+import luna.discord.core.config.Configuration;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

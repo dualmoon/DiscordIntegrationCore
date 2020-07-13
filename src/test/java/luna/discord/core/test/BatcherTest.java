@@ -1,6 +1,6 @@
-package chikachi.discord.core.test;
+package luna.discord.core.test;
 
-import chikachi.discord.core.Batcher;
+import luna.discord.core.Batcher;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

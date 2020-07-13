@@ -1,4 +1,4 @@
-package chikachi.discord.core.test.impl;
+package luna.discord.core.test.impl;
 
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.OnlineStatus;

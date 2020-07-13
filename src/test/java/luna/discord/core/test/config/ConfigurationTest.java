@@ -1,10 +1,10 @@
-package chikachi.discord.core.test.config;
+package luna.discord.core.test.config;
 
-import chikachi.discord.core.CoreConstants;
-import chikachi.discord.core.config.Configuration;
-import chikachi.discord.core.config.discord.DiscordChannelConfig;
-import chikachi.discord.core.config.validator.ValidationResult;
-import chikachi.discord.core.config.validator.rules.ChannelCommandPrefixEmptyRule;
+import luna.discord.core.CoreConstants;
+import luna.discord.core.config.Configuration;
+import luna.discord.core.config.discord.DiscordChannelConfig;
+import luna.discord.core.config.validator.ValidationResult;
+import luna.discord.core.config.validator.rules.ChannelCommandPrefixEmptyRule;
 import org.junit.Assert;
 import org.junit.Test;
 

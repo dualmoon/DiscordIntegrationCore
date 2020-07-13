@@ -1,6 +1,6 @@
-package chikachi.discord.core.test;
+package luna.discord.core.test;
 
-import chikachi.discord.core.TextFormatter;
+import luna.discord.core.TextFormatter;
 import org.junit.Test;
 
 import java.util.HashMap;

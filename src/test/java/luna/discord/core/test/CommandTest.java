@@ -1,10 +1,10 @@
-package chikachi.discord.core.test;
+package luna.discord.core.test;
 
-import chikachi.discord.core.config.discord.CommandConfig;
-import chikachi.discord.core.test.impl.FakeGuild;
-import chikachi.discord.core.test.impl.FakeRole;
-import chikachi.discord.core.test.impl.FakeTextChannel;
-import chikachi.discord.core.test.impl.FakeUser;
+import luna.discord.core.config.discord.CommandConfig;
+import luna.discord.core.test.impl.FakeGuild;
+import luna.discord.core.test.impl.FakeRole;
+import luna.discord.core.test.impl.FakeTextChannel;
+import luna.discord.core.test.impl.FakeUser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
