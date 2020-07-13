@@ -9,8 +9,8 @@ repositories {
 apply plugin: 'java'
 apply plugin: 'idea'
 
-def jdaVersion = '3.6.0'
-def jdaJob = 354
+def jdaVersion = '3.8.3'
+def jdaJob = 464
 
 dependencies {
     compile 'net.dv8tion:JDA:' + jdaVersion + '_' + jdaJob
