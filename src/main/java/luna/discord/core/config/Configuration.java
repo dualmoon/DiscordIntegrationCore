@@ -57,7 +57,7 @@ public class Configuration {
             .registerTypeAdapter(DimensionConfigType.class, new DimensionConfigTypeAdapter())
             .registerTypeAdapter(MessageConfig.class, new MessageConfigAdapter())
             .registerTypeAdapter(Pattern.class, new PatternAdapter())
-            .setVersion(3.0)
+            .setVersion(3.1)
             .setPrettyPrinting()
             .create();
     }

@@ -19,6 +19,8 @@ import com.google.gson.annotations.Since;
 import java.util.ArrayList;
 
 public class DiscordChannelConfig extends DiscordChannelGenericConfig {
+    @Since(3.1)
+    public String webhookUser;
     @Since(3.0)
     public String webhook;
     @Since(3.0)
@@ -30,6 +32,10 @@ public class DiscordChannelConfig extends DiscordChannelGenericConfig {
     public void fillFields() {
         if (this.webhook == null) {
             this.webhook = "";
+        }
+
+        if (this.webhookUser == null) {
+            this.webhookUser = "{USER}";
         }
 
         if (this.updateDescription == null) {

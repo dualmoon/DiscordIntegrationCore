@@ -72,6 +72,15 @@ public class Message {
     }
 
     WebhookMessage toWebhook(TextChannel channel) {
+        if (Configuration.getConfig().discord.channels.channels.containsKey(channel.getIdLong())) {
+            if (Configuration.getConfig().discord.channels.channels.get(channel.getIdLong()).webhookUser.trim().length() > 0) {
+                HashMap<String, String> hm = new HashMap<>();
+                this.author = new TextFormatter(hm)
+                    .addArgument("USER", this.author)
+                    .format(this.author);
+            }
+        }
+
         return new WebhookMessage(
             formatText(message.webhook, channel),
             this.author,

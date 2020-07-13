@@ -20,6 +20,7 @@ import com.google.gson.annotations.Since;
 import java.util.ArrayList;
 
 public class DiscordChannelGenericConfig {
+
     @Since(3.0)
     public String commandPrefix;
     @Since(3.0)

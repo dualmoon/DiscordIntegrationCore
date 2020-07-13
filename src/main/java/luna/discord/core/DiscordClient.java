@@ -224,6 +224,7 @@ public class DiscordClient extends ListenerAdapter {
 
                 if (Configuration.getConfig().discord.channels.channels.containsKey(channelId)) {
                     if (Configuration.getConfig().discord.channels.channels.get(channelId).webhook.trim().length() > 0) {
+                        // TODO -- parse username before dispatching message
                         WebhookMessage webhookMessage = message.toWebhook(channel);
                         if (webhookMessage.queue(this.jda, channelId)) {
                             continue;
