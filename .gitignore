@@ -5,3 +5,6 @@
 /classes/
 
 .gradle/
+
+.project
+.settings/
